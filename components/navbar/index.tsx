@@ -1,7 +1,7 @@
 import { Navbar, Dropdown, Button, Link, Text } from "@nextui-org/react";
-import { Layout } from "./Layout.tsx";
-import { AcmeLogo } from "./AcmeLogo.tsx";
-import { icons } from "./Icons.tsx";
+import { Layout } from "./Layout";
+import { AcmeLogo } from "./AcmeLogo";
+import { icons } from "./Icons";
 
 const Nav = () => {
   return (
