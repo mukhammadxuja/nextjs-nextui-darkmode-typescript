@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import { Loading } from '@nextui-org/react';
+import { Link } from '@nextui-org/react';
+import NextLink from 'next/link';
 
 export default function Home() {
   return (
@@ -11,6 +13,21 @@ export default function Home() {
       </Head>
 
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <NextLink href="/about">
+        <Link block isExternal underline>
+          "First solve the problem. Then, write the code." - Jon Johnson.
+          (Primary)
+        </Link>
+      </NextLink>
+      <Link block isExternal underline color="secondary" href="#">
+        "First solve the problem. Then, write the code." - Jon Johnson.
+        (Secondary)
+      </Link>
+      <Link block isExternal underline color="success" href="#">
+        "First solve the problem. Then, write the code." - Jon Johnson.
+        (Success)
+      </Link>
+      <Loading />
     </div>
   );
 }
